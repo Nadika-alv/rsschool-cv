@@ -1,1 +1,274 @@
+body {
+  font-family: "Montserrat", sans-serif; /*подключение CSS rules to specify families (стиль, толщина) с файла индекс*/
+  background: #e5e5e5; /*цвет листа-подложки под блоками*/
+}
 
+/*margin-top: 10px; верхний внешний отступ*/
+/*margin-right: 10px; правый внешний отступ*/
+/* margin-bottom: 10px; нижний внешний отступ*/
+/*margin-left: 10px; левый внешний отступ*/
+/*Можно записать как margin: цифра, если все внешние отступы равны 
+  или margin: цифра1(верхний) цифра2(правый) цифра3(нижний) 
+  цифра4(левый внешний отступ т.е. по часовой стрелке
+  или две цифры, где 1цифра верхний и нижний отступ, а 2цифра левый и правый*/
+/* padding-left: 20px; левый внутренний отступ в контейнере*/
+
+.mane-container {
+  /*основной блок, состоящий из двух блоков(1- Maine content section
+  и 2- Sidebar section с горизонтальной разбивкой на секции*/
+  display: flex;
+  flex-direction: row-reverse; /*row - горизонтальная разбивка сайта на колонки, 
+  а column - вертикальная) технология называется flexbox, row-reverse щбозначает
+  поменять блоки местами */
+  width: 1200px; /*ширина верхнего листа на подложке*/
+  margin: auto; /*Центрируем по горизонтали блок */
+}
+
+/* Maine content section*/
+.mane-content-cection {
+  padding: 100px 90px; /*сдвиг всего текста на белом фоне на 100 верхний и нижний
+  отступ и на 90 левый-правый */
+  background-color: #fff;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  width: 1200px; /*ширина верхнего листа на подложке*/
+}
+
+.maine-conect-title {
+  /*стиль основных заголовков (проджект, ворк экспирианс, эдьюкейшн) */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 10px; /*сдвиг вниз от заголовка (проджект, ворк экспирианс, эдьюкейшн)
+  до текста содержимого */
+}
+
+.about-me-section {
+  margin-bottom: 40px; /*сдвиг вниз от текста-описаниея под Именем 
+  Фамилией до следующего заголовка проджект)*/
+}
+
+.about-my-profession {
+  /*-- стили заголовка названия профессии--*/
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  margin-bottom: 20px; /*сдвиг вниз от фронтенда (назв профессии) до ФИО*/
+}
+
+.my-name {
+  /*-- стили текста ФИО--*/
+  font-style: normal;
+  font-weight: bold; /*--Жирный шрифт --*/
+  font-size: 45px; /*-- разжмер шрифта --*/
+  line-height: 55px; /*-- толщина линии --*/
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.about-me-description,
+.english-level,
+.example-code-section {
+  /*-- стили текста описания под ФИО--*/
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  width: 400px; /*--Ширина блока --*/
+}
+
+.about-projects-section {
+  margin-bottom: 50px; /*делаем отступ вниз от блока проджект до блока (заголовка)
+  ворк экспирионс --*/
+}
+
+.my-projects-list {
+  padding: 0 0 0 17px; /*выравниваем внутр. отступ влево, чтобы 
+  список начинался под заголовком--*/
+}
+
+.my-projects-text {
+  margin-left: 7px; /*выравниваем ширину отступа от цифр до ссылок в блоке проджект--*/
+}
+
+.my-projects-link, /*--применение стилей к ссылкам и названиям в скобках--*/
+.my-projects-text {
+  color: #595959;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.my-projects-item, /*--применение стилей к цифрам и скобкам в блоке проджект--*/
+.my-projects-bracket {
+  font-style: normal;
+  font-weight: bold; /*--жирный шрифт--*/
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+/*My work experience section--*/
+.about-experience-section {
+  /*--стили для текста в экспирионс--*/
+  width: 525px;
+  margin-bottom: 45px;
+}
+
+.name-company {
+  /*--выделение в строке название компании, относится к оисанию
+  my-work-experions-position, т.к. находится в одном с ним заголовке h4--*/
+  color: #fb6d3a;
+}
+
+.my-work-experions-position {
+  /*--стили строки с названием компании и должности--*/
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  margin: 0 0 10px 0; /*--отступ от строки с назв. копмании-должности 
+  до периода работы--*/
+}
+
+.my-work-experions-time {
+  /*--стили строки с периодом работы--*/
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin: 0 0 10px 0; /*--отступ от строки с периодом работы 
+  до перечня обязанностей--*/
+}
+
+.devider {
+  /*--черный разделитель-линия вертикальная в периоде работы--*/
+  color: #000;
+}
+
+.my-work-experions-duties {
+  /*--список с обязанностями--*/
+  padding: 0 0 0 17px; /*--отступ влево, для выравнивания списка с началом строки с
+  названием должности и компании--*/
+}
+
+.company-block 
+ /*--для создания расстояния между компаниями--*/ {
+  margin: 0 15px 0 0;
+}
+
+.my-work-experions-duty 
+/*--стили для элементов списков обязанностей компании--*/ {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+/*Sidebar section */
+.sidebar-section {
+  background-color: #1e2939;
+  width: 370px;
+  padding: 40px 0; /*-- Отступ вниз на синем фоне в сайдбаре (над фото)--*/
+}
+
+.contacts-section,
+.tech-skills-section,
+.soft-skills {
+  margin: 50px 0px 0px 40px; /*-- Отступ вниз от фото до контактов и слева от син. края--*/
+}
+
+.sidebar-title {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #fff;
+}
+
+.contacts-section-type {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-right: 7px;
+  color: #fff;
+}
+
+.contacts-section-link {
+  color: #565e6a;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  font-style: normal;
+}
+.contacts-section-tel {
+  color: #565e6a;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.skills-list {
+  padding-left: 17px;
+}
+.skills-item {
+  color: #fb636a;
+}
+.text {
+  color: #fff;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.sidebar-title {
+  font-style: normal;
+  font-size: 22px;
+  font-weight: bold;
+  font-hight: 27px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+footer {
+  padding: 2px;
+  font-size: 16px;
+  text-align: center;
+  background: #b1afaf;
+  width: 1200px;
+  margin: auto;
+}
+.non {
+  list-style-type: none; /* Убираем маркеры */
+}
+.header-menu-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.menu-list-item {
+  padding-right: 76px;
+}
+.menu-list-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* .menu-list-item:last-child {
+  padding-right: 0;
+} */
+
+.footer_link {
+  display: inline;
+  margin: 10;
+  padding: 5px; /*  */
+}
