@@ -28,7 +28,7 @@ body {
 .mane-content-cection {
   padding: 100px 90px; /*сдвиг всего текста на белом фоне на 100 верхний и нижний
   отступ и на 90 левый-правый */
-  background-color: #fff;
+  background-color: rgb(234, 240, 159);
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
   width: 1200px; /*ширина верхнего листа на подложке*/
 }
@@ -65,7 +65,7 @@ body {
   font-weight: bold; /*--Жирный шрифт --*/
   font-size: 45px; /*-- разжмер шрифта --*/
   line-height: 55px; /*-- толщина линии --*/
-  color: #000;
+  color: #041124;
   margin-bottom: 25px;
 }
 
@@ -174,7 +174,7 @@ body {
 
 /*Sidebar section */
 .sidebar-section {
-  background-color: #1e2939;
+  background-color: #4c6ea1;
   width: 370px;
   padding: 40px 0; /*-- Отступ вниз на синем фоне в сайдбаре (над фото)--*/
 }
@@ -202,14 +202,14 @@ body {
 }
 
 .contacts-section-link {
-  color: #565e6a;
+  color: #041124;
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
   font-style: normal;
 }
 .contacts-section-tel {
-  color: #565e6a;
+  color: #041124;
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
